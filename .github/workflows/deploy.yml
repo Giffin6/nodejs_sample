@@ -23,7 +23,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd beginner-devops-project
+            cd beginner-devops-project/nodejs_sample
             git pull
             npm install
             pm2 restart app.js || pm2 start app.js
